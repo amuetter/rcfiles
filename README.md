@@ -8,9 +8,7 @@ Clone into your home folder:
 
 ```
 cd ~
-
 git clone https://github.com/amuetter/rcfiles.git
-
 cd rcfiles
 ```
 Make sure you have the right permissions to execute the installation script
