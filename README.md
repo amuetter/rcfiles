@@ -4,4 +4,11 @@ provides a basic .vimrc and an installation script that loads the necessary plug
 
 ## Installation
 
-clone into your home folder
+Clone into your home folder:
+
+```
+cd ~
+git clone https://github.com/amuetter/rcfiles.git
+
+cd rcfiles
+```
