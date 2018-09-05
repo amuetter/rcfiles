@@ -55,3 +55,4 @@ let g:airline_right_alt_sep = ''
 
 map <Tab> <C-W>w
 nmap <C-n> :NERDTreeToggle<CR>
+inoremap ( ()<Esc>i
