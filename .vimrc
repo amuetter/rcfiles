@@ -3,6 +3,16 @@ set nocompatible
 
 execute pathogen#infect()
 
+
+"" Table of Contents
+""------------------
+"" Colors and syntax
+"" Navigation
+"" Tabs and Indentation
+"" Autocomplete
+"" Miscellaneous
+
+
 "" Colors and syntax highlighting
 filetype plugin indent on
 syntax on
@@ -56,10 +66,10 @@ set shiftwidth=4
 vnoremap < <gv
 vnoremap > >gv
 
-
-nmap <C-n> :NERDTreeToggle<CR>
-
 "" Autocomplete
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
+
+"" Miscellaneous
+nmap <C-n> :NERDTreeToggle<CR>
