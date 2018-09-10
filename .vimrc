@@ -3,22 +3,11 @@ set nocompatible
 
 execute pathogen#infect()
 
+"" Colors and syntax highlighting
 filetype plugin indent on
-
 syntax on
-
-set number
-set relativenumber
-
 set t_Co=256
 color wombat256mod
-
-set expandtab
-set tabstop=4
-set shiftwidth=4
-vnoremap < <gv
-vnoremap > >gv
-
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 "let &colorcolumn="80,".join(range(120,999),",")
 "let &colorcolumn=join(range(81,999),",")
@@ -55,6 +44,22 @@ let g:airline_right_alt_sep = ''
 "  let g:airline_symbols.linenr = ''
 "  let g:airline_symbols.space = "\ua0"
 
+"" Navigation
+set number
+set relativenumber
 map <Tab> <C-W>w
+
+"" Tabs and indentation
+set expandtab
+set tabstop=4
+set shiftwidth=4
+vnoremap < <gv
+vnoremap > >gv
+
+
 nmap <C-n> :NERDTreeToggle<CR>
+
+"" Autocomplete
 inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
