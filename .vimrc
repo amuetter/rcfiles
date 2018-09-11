@@ -1,8 +1,8 @@
-""                             _   _            _             _                    
-""                            | | | |          ( )           (_)                   
-""   __ _ _ __ ___  _   _  ___| |_| |_ ___ _ __|/ ___  __   ___ _ __ ___  _ __ ___ 
+""                             _   _            _             _
+""                            | | | |          ( )           (_)
+""   __ _ _ __ ___  _   _  ___| |_| |_ ___ _ __|/ ___  __   ___ _ __ ___  _ __ ___
 ""  / _` | '_ ` _ \| | | |/ _ \ __| __/ _ \ '__| / __| \ \ / / | '_ ` _ \| '__/ __|
-"" | (_| | | | | | | |_| |  __/ |_| ||  __/ |    \__ \  \ V /| | | | | | | | | (__ 
+"" | (_| | | | | | | |_| |  __/ |_| ||  __/ |    \__ \  \ V /| | | | | | | | | (__
 ""  \__,_|_| |_| |_|\__,_|\___|\__|\__\___|_|    |___/ (_)_/ |_|_| |_| |_|_|  \___|
 ""
 ""
@@ -19,6 +19,8 @@
 set nocompatible
 execute pathogen#infect()
 set bs=2
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
 
 " Backup, swap and undofile
 set noswapfile
@@ -75,7 +77,7 @@ set number
 set relativenumber
 set scrolloff=5
 map <Tab> <C-W>w
-set hlsearch
+"set hlsearch
 set incsearch
 set ignorecase
 set smartcase
@@ -94,3 +96,4 @@ inoremap { {}<Esc>i
 
 "" Miscellaneous
 nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-k> :%s/\s\+$//ce<CR>
