@@ -75,7 +75,7 @@ let g:airline_right_alt_sep = ''
 "" Navigation and Search
 set number
 set relativenumber
-set scrolloff=5
+set scrolloff=10
 map <Tab> <C-W>w
 "set hlsearch
 set incsearch
@@ -91,8 +91,13 @@ vnoremap > >gv
 
 "" Autocomplete
 inoremap ( ()<Esc>i
+inoremap (( (
 inoremap [ []<Esc>i
+inoremap [[ [
 inoremap { {}<Esc>i
+inoremap {{ {
+inoremap ' ''<Esc>i
+inoremap '' '
 
 "" Miscellaneous
 nmap <C-n> :NERDTreeToggle<CR>
