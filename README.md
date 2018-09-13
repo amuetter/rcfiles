@@ -1,6 +1,6 @@
 # rcfiles
 
-Provides a basic .vimrc and an installation script that loads the necessary plugins (for Tim Pope's Pathogen)
+Provides a basic .vimrc and an installation script that loads the necessary plugins (for Tim Pope's Pathogen), plus configuration files for tmux etc. (work in progress).
 
 ## Installation
 
