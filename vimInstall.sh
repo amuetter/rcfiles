@@ -22,3 +22,4 @@ git clone https://github.com/tpope/vim-fugitive
 cd ~
 
 ln -s ./rcfiles/.vimrc .vimrc
+ln -s ./rcfiles/.tmux.conf .tmux.conf
