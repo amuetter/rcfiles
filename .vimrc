@@ -20,7 +20,8 @@ set nocompatible
 execute pathogen#infect()
 set bs=2
 " Automatic reloading of .vimrc
-autocmd! bufwritepost .vimrc source %
+" autocmd! bufwritepost .vimrc source %
+let mapleader = "-"
 
 " Backup, swap and undofile
 set noswapfile
@@ -30,6 +31,7 @@ set undolevels=100
 set undoreload=1000
 set undodir=$HOME/.vim/undofiles
 
+:nnoremap <leader>d dd
 
 "" Colors and syntax highlighting
 filetype plugin indent on
@@ -102,3 +104,7 @@ inoremap '' '
 "" Miscellaneous
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-k> :%s/\s\+$//ce<CR>
+
+" Copy/paste to/from system clipboard
+map <Leader>p "*p
+map <Leader>y "*y
