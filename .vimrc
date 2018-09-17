@@ -92,12 +92,12 @@ vnoremap < <gv
 vnoremap > >gv
 
 "" Autocomplete
-" inoremap (( ()<Esc>i
-
-inoremap ( ()<Esc>i<C-o>f)<C-o>F(<C-o>l<C-o>s
-inoremap [ []<Esc>i<C-o>f]<C-o>F[<C-o>l<C-o>s
-inoremap { {}<Esc>i<C-o>f}<C-o>F{<C-o>l<C-o>s
-inoremap '' ''<Esc>i
+inoremap ( ()<Esc>mzi<C-o>f)<Esc>'zls
+inoremap [ []<Esc>mzi<C-o>f]<Esc>'zls
+inoremap { {}<Esc>mzi<C-o>f}<Esc>'zls
+inoremap < <><Esc>mzi<C-o>f><Esc>'zls
+inoremap ' ''<Esc>mzi<C-o>f'<Esc>'zls
+inoremap " ""<Esc>mzi<C-o>f"<Esc>"zls
 
 "" Miscellaneous
 nmap <C-n> :NERDTreeToggle<CR>
@@ -106,4 +106,3 @@ nmap <C-k> :%s/\s\+$//ce<CR>
 " Copy/paste to/from system clipboard
 map <Leader>p "*p
 map <Leader>y "*y
-
