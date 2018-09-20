@@ -92,12 +92,12 @@ vnoremap < <gv
 vnoremap > >gv
 
 "" Autocomplete
-inoremap ( ()<Esc>mzi<C-o>f)<Esc>'zls
-inoremap [ []<Esc>mzi<C-o>f]<Esc>'zls
-inoremap { {}<Esc>mzi<C-o>f}<Esc>'zls
-inoremap < <><Esc>mzi<C-o>f><Esc>'zls
-inoremap ' ''<Esc>mzi<C-o>f'<Esc>'zls
-inoremap " ""<Esc>mzi<C-o>f"<Esc>"zls
+inoremap ( ()<Esc>mzi<C-o>f)<Esc>`zs
+inoremap [ []<Esc>mzi<C-o>f]<Esc>`zs
+inoremap { {}<Esc>mzi<C-o>f}<Esc>`zs
+inoremap < <><Esc>mzi<C-o>f><Esc>`zs
+inoremap ' ''<Esc>mzi<C-o>f'<Esc>`zs
+inoremap " ""<Esc>mzi<C-o>f"<Esc>`zs
 
 "" Miscellaneous
 nmap <C-n> :NERDTreeToggle<CR>
