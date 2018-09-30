@@ -92,6 +92,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 "" Autocomplete
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+
 inoremap ( ()<Esc>mzi<C-o>f)<Esc>`zs
 inoremap [ []<Esc>mzi<C-o>f]<Esc>`zs
 inoremap { {}<Esc>mzi<C-o>f}<Esc>`zs
