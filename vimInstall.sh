@@ -18,7 +18,9 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/vim-scripts/wombat256.vim
 git clone https://github.com/vim-airline/vim-airline
 git clone https://github.com/tpope/vim-fugitive
+git clone https://github.com/lifepillar/vim-solarized8
 git clone https://github.com/rkulla/pydiction.git
+
 cd ~
 
 ln -s ./rcfiles/.vimrc .vimrc

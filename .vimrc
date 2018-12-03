@@ -36,13 +36,14 @@ set undodir=$HOME/.vim/undofiles
 "" Colors and syntax highlighting
 filetype plugin indent on
 syntax on
-set t_Co=256
-color wombat256mod
+"set t_Co=256
+"color wombat256mod
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 "let &colorcolumn="80,".join(range(120,999),",")
 "let &colorcolumn=join(range(81,999),",")
 set colorcolumn=95
-
+set background=dark
+colorscheme solarized8
 "" Vim-Airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
