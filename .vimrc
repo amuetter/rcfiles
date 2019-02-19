@@ -79,6 +79,7 @@ let g:airline_right_alt_sep = ''
 set number
 set relativenumber
 set scrolloff=10
+set linebreak
 map <Tab> <C-W>w
 "set hlsearch
 set incsearch
@@ -108,4 +109,4 @@ nmap <C-k> :%s/\s\+$//ce<CR>
 
 " Copy/paste to/from system clipboard
 map <Leader>p "*p
-map <Leader>y "*y
+map <Leader>y "+y
